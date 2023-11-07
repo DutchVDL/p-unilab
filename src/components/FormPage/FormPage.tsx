@@ -34,7 +34,7 @@ const FormPage = () => {
 
   //PAGINATION
   const [currPage, setCurrPage] = useState(1);
-  const cards = 9;
+  const cards = 10;
   const lastIndex = currPage * cards;
   const firstIndex = lastIndex - cards;
   const cardsData = membersData;
@@ -42,7 +42,7 @@ const FormPage = () => {
   const nums = [...Array(pageNum + 1).keys()].slice(1);
 
   const nextPage = () => {
-    if (currPage !== lastIndex && currPage < 6) {
+    if (currPage !== lastIndex && currPage < 5) {
       setCurrPage(currPage + 1);
     }
   };
@@ -316,7 +316,7 @@ const FormPage = () => {
           <IoIosArrowForward onClick={nextPage} className="arrows" />
 
           <MdOutlineKeyboardDoubleArrowRight
-            onClick={() => setCurrPage(6)}
+            onClick={() => setCurrPage(5)}
             className="arrows"
           />
         </ul>
