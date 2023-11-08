@@ -7,6 +7,7 @@ import Auth from "./components/Authorization/Auth";
 import FormPage from "./components/FormPage/FormPage";
 import Navigation from "./components/Header/Navigation";
 import Posts from "./components/Posts/Posts";
+import NotFound from "./components/Error/Error";
 
 function App() {
   return (
@@ -27,10 +28,7 @@ function App() {
           <Route path="api" element={<Posts />} />
         </Route>
 
-        <Route
-          path="*"
-          element={<h1 style={{ backgroundColor: "white" }}>Error</h1>}
-        />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

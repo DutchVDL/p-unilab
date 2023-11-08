@@ -30,11 +30,16 @@ const Login = () => {
 
       <div className="image-upload-container">
         <label htmlFor="file-upload" className="custom-file-upload">
-          <img
-            src={selectedImage ? selectedImage : IMG}
-            alt="Upload Icon"
-            className="upload-icon"
-          />
+          {selectedImage ? (
+            <img
+              src={selectedImage}
+              alt="Upload Icon"
+              className="upload-icon"
+              style={{ borderRadius: "50px", width: "100px", height: "100px" }}
+            />
+          ) : (
+            <img src={IMG} alt="Upload Icon" className="upload-icon" />
+          )}
         </label>
         <input
           type="file"

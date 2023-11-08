@@ -219,7 +219,7 @@ const FormPage = () => {
             }}
             size={24}
           />
-          <input type="text" id="search" style={{ textAlign: "center" }} />
+          <input type="text" id="search" />
         </div>
       </nav>
 

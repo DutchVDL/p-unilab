@@ -100,6 +100,10 @@ ul li:hover {
   border-radius: 10px;
 }
 
+#filter:hover {
+  opacity: 0.4;
+}
+
 #filter p {
   font-family: "Montserrat";
   font-weight: 800;
@@ -132,10 +136,8 @@ nav {
   background-color: white;
   color: grey;
   height: 37px;
-  width: 260px;
+  width: 220px;
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-left: 40px;
   border-radius: 10px;
 }
